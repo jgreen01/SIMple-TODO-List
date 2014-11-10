@@ -1,0 +1,71 @@
+body {
+  background: #3399cc; }
+
+#topPanel {
+  position: fixed;
+  top: 5px; }
+  #topPanel > * {
+    display: inline-block;
+    position: relative; }
+  #topPanel h1 {
+    left: 10px;
+    bottom: 5px; }
+  #topPanel img {
+    float: right;
+    margin-right: 10px; }
+
+#listPanel {
+  float: left;
+  width: 30%; }
+  #listPanel h2 {
+    bottom: 15px; }
+  #listPanel > * {
+    position: relative;
+    left: 10px;
+    margin-bottom: 10px; }
+  #listPanel li {
+    list-style-type: none; }
+
+#todoPanel {
+  float: left;
+  margin-left: 1%;
+  width: 68%; }
+  #todoPanel > * {
+    position: relative;
+    left: 10px;
+    margin-bottom: 10px; }
+  #todoPanel > input {
+    top: 8px; }
+  #todoPanel .TodoItem .DueDate {
+    float: right;
+    margin-right: 20px; }
+
+#bottomPanel {
+  position: fixed;
+  bottom: 10px; }
+  #bottomPanel > * {
+    text-align: center;
+    position: relative;
+    top: 10px; }
+
+.Panel {
+  border-radius: 15px;
+  background: white;
+  border: 1px solid; }
+
+.HDFTPanel {
+  height: 65px;
+  width: 98%;
+  z-index: 10000; }
+
+.BodyPanel {
+  margin-top: 70px;
+  margin-bottom: 70px; }
+
+.CompletedItem {
+  text-decoration: line-through; }
+
+.HighlightItem {
+  background: lightblue; }
+
+/*# sourceMappingURL=TODO.css.map */

@@ -1,0 +1,97 @@
+$SIM-color: #3399cc;
+
+$hdft-height: 65px;
+
+body { background: $SIM-color }
+
+#topPanel {
+  position: fixed;
+  top: 5px;
+
+  > * {
+    display: inline-block;
+    position: relative;
+  }
+
+  h1 {
+    left: 10px;
+    bottom: 5px;
+  }
+
+  img {
+    float: right;
+    margin-right: 10px;
+  }
+}
+
+#listPanel {
+  float: left;
+  width: 30%;
+
+  h2 { bottom: 15px; }
+
+  > * {
+    position: relative;
+    left: 10px;
+    margin-bottom: 10px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+#todoPanel {
+  float: left;
+  margin-left: 1%;
+  width: 68%;
+
+  > * {
+    position: relative;
+    left: 10px;
+    margin-bottom: 10px;
+  }
+
+  > input { top: 8px; }
+
+  .TodoItem .DueDate {
+    float: right;
+    margin-right: 20px;
+  }
+}
+
+#bottomPanel {
+  position: fixed;
+  bottom: 10px;
+
+  > * {
+    text-align: center;
+    position: relative;
+    top: 10px;
+  }
+}
+
+.Panel {
+  border-radius: 15px;
+  background: white;
+  border: 1px solid;
+}
+
+.HDFTPanel {
+  height: $hdft-height;
+  width: 98%;
+  z-index: 10000;
+}
+
+.BodyPanel {
+  margin-top: $hdft-height + 5px;
+  margin-bottom: $hdft-height + 5px;
+}
+
+.CompletedItem {
+  text-decoration: line-through;
+}
+
+.HighlightItem {
+  background: lightblue;
+}

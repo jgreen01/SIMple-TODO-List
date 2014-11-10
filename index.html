@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+        <title>TODO List</title>
+		<link rel="stylesheet" type="text/css" href="css/TODO.css">
+	</head>
+
+	<body>
+
+	    <header id="topPanel" class="Panel HDFTPanel">
+            <img src="img/SIM-Logo.png">
+            <h1>TODO LIST</h1>
+	    </header>
+	    
+	    <div id="listPanel" class="BodyPanel Panel">
+            <h2>Your Lists</h2>
+            <ul>
+                <li>work</li>
+                <li>home</li>
+                <li>vacation</li>
+            </ul>
+	    </div>
+	    
+	    <div id="todoPanel" class="BodyPanel Panel">
+            <input id="newTodoBox" type="text" placeholder="What do you need to do?" />
+            <input id="todoDate" type="date" />
+            <input id="addTodoBtn" type="button" value="Add" />
+            <input id="removeTodoBtn" type="button" value="Remove" />
+
+            <div id="listOfTodos"></div>
+	    </div>
+	    
+	    <footer id="bottomPanel" class="Panel HDFTPanel">
+            <div>Copy RIGHT!</div>
+	    </footer>
+
+
+        <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+        <script type="text/javascript" src="js/underscore.js"></script>
+        <script type="text/javascript" src="js/TODO.js"></script>
+
+	</body>
+</html>
